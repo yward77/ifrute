@@ -478,7 +478,7 @@ nav.anav a {
     height: auto;
     padding: 40px 0;
 }
-/* From Uiverse.io by javierBarroso */ 
+
 .social-login-icons {
   display: flex;
   align-items: center;
@@ -576,7 +576,7 @@ nav.anav a {
 .socialcontainer:hover .social-icon-4 {
   transform: translateY(-70px);
 }
-/* From Uiverse.io by wilsondesouza */ 
+
 ul {
   list-style: none;
 }

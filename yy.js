@@ -9,4 +9,4 @@ function toggleMenu() {
     } else {
         sideMenu.style.right = "0px";
     }
-}
+}  
