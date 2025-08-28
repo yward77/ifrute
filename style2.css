@@ -693,3 +693,68 @@ ul {
 .h13{
     margin-top: 4rem;
 }
+
+
+
+@media (max-width: 768px) {
+ 
+
+  .my h3 {
+    width: 90%;
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+  .example-2{
+    margin-right: 2rem;
+  }
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+.example-2 .icon-content a[data-social="tiktok"] .filled,
+.example-2 .icon-content a[data-social="tiktok"] ~ .tooltip {
+  background: black
+}
+.example-2 .icon-content a[data-social="tiktok"]:hover .filled {
+  background: black;
+}
+
+.example-2 .icon-content a[data-social="tiktok"] img {
+  transition: transform 0.3s ease;
+}
+.example-2 .icon-content a[data-social="tiktok"]:hover .filled {
+  background: white;
+  transition: background 0.3s ease;
+}
+
+.example-2 .icon-content a[data-social="tiktok"] img {
+  transition: transform 0.3s ease;
+}
+
+.example-2 .icon-content a[data-social="tiktok"]:hover img {
+  transform: scale(1.2);
+}
+
+.example-2 .icon-content a[data-social="tiktok"]:hover img {
+  transform: scale(3.2);
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ec3f3f;
+}
+.example-2 .icon-content a[data-social="youtube"] img {
+  transform: scale(1.2);
+}
+.example-2 .icon-content a[data-social="tiktok"] img {
+  transform: scale(1.2); /* تكبير دائم */
+  transition: transform 0.3s ease;
+}
+
+.example-2 .icon-content a[data-social="tiktok"]:hover img {
+  transform: scale(1.2); /* لا تغيير عند Hover */
+}
+
+.example-2 .icon-content a[data-social="tiktok"]:hover .filled {
+  background: silver; /* خلفية سوداء عند Hover */
+}
