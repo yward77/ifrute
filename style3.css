@@ -135,7 +135,7 @@ nav.anav a {
       height: 250px;
       object-fit: cover;
       border-radius: 50px;
-      border: #551414 3px solid;
+      border: #000000 3px solid;
       margin-top: 3rem;
     }
     .branch-info {
