@@ -96,7 +96,7 @@ nav.anav a {
     margin-top: 5rem;
 }
 .tit h1 {
-    color: rgb(177, 230, 255);
+    color: gray;
     display: inline-block;
     padding: 1rem;
     border-top: none;
