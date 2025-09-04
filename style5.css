@@ -146,7 +146,7 @@ width: 450px;
   --back_color: #551414;
 }
 
-.type--C {
+.type--o {
   --line_color: #000000;
   --back_color: #ff6600;
 }
@@ -1116,4 +1116,37 @@ ul {
   .container {
     margin-bottom: 0;
   }
+}
+
+.body6 {
+  display: flex;
+  justify-content: center; /* يوسّط أفقي */
+  align-items: center;     /* يوسّط عمودي */
+  margin: 0;
+  margin-top: 1rem;
+    background: linear-gradient(to right, #da3989 ,  rgb(255, 255, 255));
+  
+}
+
+.body6 .wfr {
+  max-width: 90%;   /* علشان الصورة ما تطلعش برا الشاشة */
+  max-height: 90%; 
+  margin-left: 15rem; /* علشان تظل متناسبة */
+}
+@media (max-width: 768px) {
+  .body6 {
+    flex-direction: column; /* يخلي المحتوى تحت بعض */
+    padding: 0.5rem;
+    margin-top: 1rem;
+    padding: 3rem;
+  }
+
+  .body6 .wfr {
+    max-width: 100%;  /* ياخد عرض الشاشة كله */
+    margin-left: 0;   /* إلغاء إزاحة الصورة */
+  }
+}
+
+.wfr{
+    width: 450px;
 }
