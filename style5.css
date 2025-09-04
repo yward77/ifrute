@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar {
   background: linear-gradient(to right, rgb(146, 210, 240), #da3989);
   height: 5rem;
@@ -17,7 +23,13 @@
 nav.anav a {
   margin-left: 15px;
 }
+.logo1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+}
 .menu-icon {
   width: 35px;
   height: 35px;
@@ -77,142 +89,381 @@ nav.anav a {
 }
 
 
-.body2 {
-  margin-top: 1rem;
+
+
+.hi1 h1{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 6rem;
+    color: #da3989;
+    
 }
 
-
-.c11,
-.c22,
-.c33 {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin: 1rem 0;
+.img6 {
+  margin-top: 5rem;
+  padding: 0 90px;
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2.150px);
+  background-color: rgb(146, 210, 240);
+  padding: 3rem;
 }
 
-.c11 .c1,
-.c22 .c1,
-.c33 .c1 {
-  width: 135px;
-  height: 135px;
-  border-radius: 50%;
+@media (max-width: 768px) {
+  .img6 {
+    padding: 3rem;
+    gap: 14px;
+    grid-template-columns: 1fr;
+    /* موبايل: فوق بعض */
+    margin-top: 2rem;
+  }
+}
+
+.img6 img {
+  width: 90%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 5px;
+
+
+
+
+}
+ .talb{
+width: 450px;
+ }
+ 
+/* From Uiverse.io by himanshu9682 */
+.type--A {
+  --line_color: #555555;
+  --back_color: #ffecf6;
+}
+
+.type--B {
+  --line_color: #1b1919;
+  --back_color: #551414;
+}
+
+.type--C {
+  --line_color: #000000;
+  --back_color: #ff6600;
+}
+
+.button {
+  position: relative;
+  z-index: 0;
+  width: 240px;
+  height: 56px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--line_color);
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.button__text {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bolder;
-  color: #fff;
-  font-size: 50px;
+  width: 100%;
+  height: 100%;
 }
 
-.c11 .c1 {
-  background-color: #da3989;
-  margin-left: 3rem;
+.button::before,
+.button::after,
+.button__text::before,
+.button__text::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--line_color);
+  transition: all 0.5s ease;
 }
 
-.c22 .c1 {
-  background-color: rgb(146, 210, 240);
-  margin-left: 5rem;
+.button::before {
+  top: 0;
+  left: 54px;
+  width: calc(100% - 56px * 2 - 16px);
 }
 
-.c33 .c1 {
-  background-color: #da3989;
-  margin-left: 3rem;
+.button::after {
+  top: 0;
+  right: 54px;
+  width: 8px;
 }
 
-.c11 .h22,
-.c22 .h22,
-.c33 .h22 {
-  margin-left: 1rem;
-  font-size: 18px;
-  line-height: 1.4;
+.button__text::before {
+  bottom: 0;
+  right: 54px;
+  width: calc(100% - 56px * 2 - 16px);
 }
 
-.h12 {
-  text-align: center;
-  color: #da3989;
+.button__text::after {
+  bottom: 0;
+  left: 54px;
+  width: 8px;
 }
 
-.c22 {
-  margin-left: 20rem;
+.button__line {
+  position: absolute;
+  top: 0;
+  width: 56px;
+  height: 100%;
+  overflow: hidden;
 }
 
-.c33 .c1 {
-  background-color: rgb(228, 228, 80);
+.button__line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 150%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 300px;
+  border: solid 3px var(--line_color);
 }
 
+.button__line:nth-child(1),
+.button__line:nth-child(1)::before {
+  left: 0;
+}
 
-@media (max-width: 768px) {
+.button__line:nth-child(2),
+.button__line:nth-child(2)::before {
+  right: 0;
+}
 
-  .c11,
-  .c22,
-  .c33 {
+.button:hover {
+  letter-spacing: 6px;
+}
 
-    text-align: center;
-    margin: 2rem 0;
+.button:hover::before,
+.button:hover .button__text::before {
+  width: 8px;
+}
+
+.button:hover::after,
+.button:hover .button__text::after {
+  width: calc(100% - 56px * 2 - 16px);
+}
+
+.button__drow1,
+.button__drow2 {
+  position: absolute;
+  z-index: -1;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+}
+
+.button__drow1 {
+  top: -16px;
+  left: 40px;
+  width: 32px;
+  height: 0;
+  transform: rotate(30deg);
+}
+
+.button__drow2 {
+  top: 44px;
+  left: 77px;
+  width: 32px;
+  height: 0;
+  transform: rotate(-127deg);
+}
+
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2::before,
+.button__drow2::after {
+  content: "";
+  position: absolute;
+}
+
+.button__drow1::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-60deg);
+}
+
+.button__drow1::after {
+  top: -10px;
+  left: 45px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(69deg);
+}
+
+.button__drow2::before {
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-146deg);
+}
+
+.button__drow2::after {
+  bottom: 26px;
+  left: -40px;
+  width: 0;
+  height: 32px;
+  border-radius: 16px;
+  transform-origin: 16px 16px;
+  transform: rotate(-262deg);
+}
+
+.button__drow1,
+.button__drow1::before,
+.button__drow1::after,
+.button__drow2,
+.button__drow2::before,
+.button__drow2::after {
+  background: var(--back_color);
+}
+
+.button:hover .button__drow1 {
+  animation: drow1 ease-in 0.06s;
+  animation-fill-mode: forwards;
+}
+
+.button:hover .button__drow1::before {
+  animation: drow2 linear 0.08s 0.06s;
+  animation-fill-mode: forwards;
+}
+
+.button:hover .button__drow1::after {
+  animation: drow3 linear 0.03s 0.14s;
+  animation-fill-mode: forwards;
+}
+
+.button:hover .button__drow2 {
+  animation: drow4 linear 0.06s 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.button:hover .button__drow2::before {
+  animation: drow3 linear 0.03s 0.26s;
+  animation-fill-mode: forwards;
+}
+
+.button:hover .button__drow2::after {
+  animation: drow5 linear 0.06s 0.32s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drow1 {
+  0% {
+    height: 0;
   }
 
-  .c11 .c1,
-  .c22 .c1,
-  .c33 .c1 {
-    width: 120px;
-    height: 120px;
-    font-size: 40px;
-    margin-left: 0;
-  }
-
-  .c11 .h22,
-  .c22 .h22,
-  .c33 .h22 {
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-
-  .c11 .c1,
-  .c22 .c1,
-  .c33 .c1 {
-    width: 100px;
+  100% {
     height: 100px;
-    font-size: 30px;
-  }
-
-  .c11 .h22,
-  .c22 .h22,
-  .c33 .h22 {
-    font-size: 14px;
-  }
-
-  .c33 h1 {
-    width: 50%;
   }
 }
 
+@keyframes drow2 {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
 
+  10% {
+    opacity: 0;
+  }
+
+  11% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 120px;
+  }
+}
+
+@keyframes drow3 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 80px;
+  }
+}
+
+@keyframes drow4 {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 120px;
+  }
+}
+
+@keyframes drow5 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 124px;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body5 {
+  display: flex;
+  justify-content: center; /* يوسّط أفقي */
+  align-items: center;     /* يوسّط عمودي */
+  margin: 0;
+  margin-top: 2rem;
+    background: linear-gradient(to right, rgb(243, 138, 0),  rgb(248, 217, 177));
+  
+}
+
+.body5 .talb {
+  max-width: 90%;   /* علشان الصورة ما تطلعش برا الشاشة */
+  max-height: 90%; 
+  margin-left: 15rem; /* علشان تظل متناسبة */
+}
 @media (max-width: 768px) {
-  .y2 {
-    content: url("slideifrute.jpg");
-
+  .body5 {
+    flex-direction: column; /* يخلي المحتوى تحت بعض */
+    padding: 0.5rem;
+    margin-top: 1rem;
+    padding: 3rem;
   }
 
-  .y1 {
-    content: url("slide2.jpg");
-
-  }
-
-  .h12 {
-    margin-left: 3rem;
-
-
+  .body5 .talb {
+    max-width: 100%;  /* ياخد عرض الشاشة كله */
+    margin-left: 0;   /* إلغاء إزاحة الصورة */
   }
 }
+
 
 .body3 {
   background-color: rgb(146, 210, 240);
   width: 100%;
   height: auto;
+  margin-top: 8rem;
 }
 
 /* From Uiverse.io by himanshu9682 */
@@ -501,9 +752,9 @@ nav.anav a {
   }
 }
 
-.container {
+.mmm {
   width: 100%;
-  height: 300px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -525,6 +776,7 @@ nav.anav a {
   width: 100%;
   height: auto;
   padding: 40px 0;
+  margin-top: 2rem;
 }
 
 .social-login-icons {
@@ -740,147 +992,10 @@ ul {
   margin-top: 4rem;
 }
 
-.img6 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  padding: 0 90px;
-  display: grid;
-  gap: 26px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(2.150px);
-}
+
 
 @media (max-width: 768px) {
-  .img6 {
-    padding: 0 20px;
-    gap: 14px;
-    grid-template-columns: 1fr;
-    /* موبايل: فوق بعض */
-    margin-top: 2rem;
-  }
-}
 
-.img6 img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 5px;
-
-
-
-
-}
-
-.container {
-  margin: 0;
-}
-
-.body9 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 80vh;
-  background: linear-gradient(to right, rgb(146, 210, 240), #da3989);
-  column-gap: 4rem;
-}
-
-.body9 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background: linear-gradient(to right, rgb(146, 210, 240), #da3989);
-  padding: 3rem;
-}
-
-.body9 .card {
-  width: 18rem;
-  height: auto;
-  margin-bottom: 6rem;
-}
-
-@media (max-width: 768px) {
-  .body9 .img {
-    width: 90%;
-    padding: 0 2rem 0 0;
-  }
-
-  .body9 {
-    height: 80rem;
-  }
-
-  .body9 h1 {
-    color: white;
-  }
-}
-
-.body4 h1 {
-  margin-top: 4rem;
-}
-
-.body9 img {
-  width: 300px;
-}
-
-.body8 {
-  width: 100%;
-  height: 100vh;
-  background: rgb(146, 210, 240);
-  margin-top: 3rem;
-  padding: 4.5rem;
-}
-
-.body8 h1 {
-  color: white;
-  border: white 5px solid;
-  width: 40%;
-  padding: 6px;
-  text-align: center;
-  margin-left: 23rem;
-}
-
-.body8 img {
-  width: 300px;
-  height: auto;
-  margin: 3rem auto 0 auto;
-}
-
-.my {
-  display: flex;
-}
-
-.my h3 {
-  margin-top: 8rem;
-  width: 50%;
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .body8 {
-    padding: 2rem;
-    height: auto;
-  }
-
-  .body8 h1 {
-    width: 90%;
-    margin-left: 0;
-    font-size: 1.5rem;
-    margin: 0 auto;
-  }
-
-  .body8 img {
-    width: 200px;
-    margin: 2rem auto 0 auto;
-  }
-
-  .my {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
 
   .my h3 {
     width: 90%;
@@ -979,7 +1094,7 @@ ul {
 }
 
 .container {
-  height: 150px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
