@@ -1211,3 +1211,23 @@ ul {
     margin-bottom: 0;
   }
 }
+.search-container {
+  text-align: center;
+  margin: 1rem auto 2rem;
+}
+
+#branchSearch {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+#branchSearch:focus {
+  border-color: #00aaff;
+  box-shadow: 0 0 5px rgba(0,170,255,0.5);
+}

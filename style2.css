@@ -906,3 +906,70 @@ ul {
     margin-bottom: 0;
   }
 }
+.fac{width: 400px;
+  height: 650px;
+  margin-right: 3rem;
+  
+float: right;}
+.faco{background-color: rgb(146, 210, 240);
+padding: 2rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+  overflow: hidden;
+  display: flex ;
+  align-items: center;
+
+}
+.faco h2{color: white;
+  text-align: center;
+  width: 50%;
+  margin-left: 8rem;
+}
+.fac {
+  width: 400px;
+  height: 650px;
+  margin-right: 3rem;
+  flex-shrink: 0;
+}
+
+.faco {
+  background-color: rgb(146, 210, 240);
+  padding: 2rem;
+  margin: 2rem 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 10px;
+}
+
+.faco h2 {
+  color: white;
+  text-align: center;
+  width: 50%;
+  margin: 0;
+  margin-left: 8rem;
+}
+
+/* --- Responsive لموبايل --- */
+@media (max-width: 768px) {
+  .faco {
+    flex-direction: column; /* يجعل الفيديو والنص تحت بعض */
+    padding: 1.5rem;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .fac {
+    width: 80%; /* الفيديو ياخذ كامل العرض */
+    height: auto;
+    margin-right: 0;
+  }
+
+  .faco h2 {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+}

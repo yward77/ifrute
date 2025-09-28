@@ -10,3 +10,13 @@ function toggleMenu() {
         sideMenu.style.right = "0px";
     }
 }  
+const video = document.getElementById('facy');
+new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      video.play().catch(()=>{}); // يمنع ظهور الخطأ
+    } else {
+      video.pause();
+    }
+  });
+},{threshold:0.5}).observe(video);
