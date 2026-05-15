@@ -80,7 +80,7 @@ nav.anav a {
     display: flex;
     align-items: center;
      background: linear-gradient(to right, rgb(146, 210, 240), #da3989);
-    padding: 2rem;
+    padding: 4rem;
     
 }
 .mktb{
@@ -507,8 +507,8 @@ nav.anav a {
   justify-content: center;
   align-items: center;
 position: relative;
-bottom: 10rem;
-left: -230px;
+bottom: -2rem;
+left: -40px;
 }
 
 .button:not(:last-child) {
